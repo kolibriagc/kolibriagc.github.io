@@ -1,0 +1,100 @@
+/*--- presentation & mission - start ---*/
+#presentation, #mission{
+    display: flex;
+    align-items: center;
+}
+#presentation img, #mission img{
+    width: 450px;
+    margin-right: 50px;
+}
+#presentation_text p, #mission_text p{
+    text-align: justify;
+}
+/*--- presentation & mission - end ---*/
+
+/*--- staff - start ---*/
+#staff h1{
+    text-align: center;
+}
+#staff_members{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+.staff_member{
+    background: url(pictures/random/1_stripe_background.png);
+    background-size: 500px;
+    background-color: rgb(32, 32, 32);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    transition: 0.25s;
+}
+.staff_member:hover{
+    transform: scale(102.5%);
+}
+.staff_member img{
+    width: 175px;
+    height: 175px;
+    border-radius: 1000px;
+}
+.staff_member h3{
+    text-align: center;
+    color: #f7ef8a;
+}
+.staff_member p{
+    margin: 0;
+}
+/*--- staff - end ---*/
+
+/*normal tablet styling*/
+@media(max-width:850px){
+    /*--- presentation & mission - start ---*/
+    #presentation, #mission{
+        flex-direction: column;
+    }
+    #presentation img, #mission img{
+        width: 450px;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+    #presentation_text h1, #mission_text h1{
+        text-align: center;
+    }
+    /*--- presentation & mission - end ---*/
+    
+    /*--- staff - start ---*/
+    #staff_members{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+    /*--- staff - end ---*/
+}
+
+/*phone styling*/
+@media(max-width:450px){
+    /*--- presentation & mission - start ---*/
+    #presentation img, #mission img{
+        width: 90vw;
+    }
+    /*--- presentation & mission - end ---*/
+}
+
+/*small tablet styling*/
+@media(max-width:750px){
+    /*--- staff - start ---*/
+    #staff_members{
+        grid-template-columns: repeat(1, 0.9fr);
+        width: 0.8fr;
+        justify-content: center;
+    }
+    .staff_member{
+        aspect-ratio: 1/1;
+    }
+    /*--- staff - end ---*/
+    
+}

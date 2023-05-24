@@ -1,0 +1,301 @@
+/*--- presentation - start ---*/
+#presentation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#presentation img{
+    width: 450px;
+    margin-right: 50px;
+}
+#presentation p{
+    margin: 0;
+    text-align: justify;
+}
+/*--- presentation - end ---*/
+
+/*--- services - start ---*/
+#services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#services h1{
+    text-align: center;
+}
+#services_holder{
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-gap: 50px;
+}
+.service{
+    text-decoration: none;
+    background: url(pictures/random/1_stripe_background.png);
+    background-size: 500px;
+    background-color: rgb(32, 32, 32);
+    aspect-ratio: 1/1;
+    width: 350px;
+    padding: 25px;
+    color: white;
+    text-align: justify;
+    transition: 0.3s;
+}
+.service h3{
+    margin-top: 75px;
+}
+.service:hover{
+    transform: scale(102.5%);
+}
+.service hr{
+    border: 0;
+    margin: 10px 0;
+    height: 5px;
+    background: linear-gradient(to right, #ae8625, #f7ef8a);
+}
+/*--- services - end ---*/
+
+/*--- flexing - start ---*/
+#flexing h2{
+    text-align: center;
+}
+#numbers, #brands{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px;
+}
+
+#numbers{
+    margin-bottom: 100px;
+}
+.number{
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    aspect-ratio: 2/1;
+}
+.number h3{
+    margin-top: 0;
+}
+.number p{
+    margin: 0;
+}
+
+#brands img{
+    width: 100%;
+}
+/*--- flexing - end ---*/
+
+/*--- comments - start ---*/
+#customer_comments{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#comments{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+.comment{
+    background: url(pictures/random/1_stripe_background.png);
+    background-size: 500px;
+    background-color: rgb(32, 32, 32);
+    padding: 25px;
+    color: white;
+}
+.comment_header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.comment_header img{
+    height: 110px;
+    width: 110px;
+    border-radius: 1000px;
+}
+.comment_header h3, .comment_header p{
+    text-align: center;
+}
+.comment_header h3{
+    margin-top: 15px;
+}
+.comment_header p{
+    margin: 0;
+}
+.comment hr{
+    margin: 10px 0;
+    border: 0;
+    height: 5px;
+    background: linear-gradient(to right, #ae8625, #f7ef8a);
+}
+.comment_content h4, .comment_content p{
+    margin-top: 0;
+    text-align: justify;
+}
+.comment_content p{
+    margin: 0;
+}
+/*--- comments - end ---*/
+
+/*--- contact - start ---*/
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contact a{
+    color: white;
+    background-color: #ae8625;
+    font-size: 20px;
+    padding: 10px 25px;
+    text-decoration: none;
+    transition: 0.25s;
+}
+#contact a:hover{
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+/*--- contact - end ---*/
+
+/*tablet styling*/
+@media(max-width:1075px){
+    /*--- flexing - start ---*/
+    #numbers, #brands{
+        grid-gap: 50px;
+    }
+    /*--- flexing - end ---*/
+
+    /*--- comments - start ---*/
+    #comments{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .comment{
+        padding: 50px;
+    }
+    /*--- comments - end ---*/
+}
+
+/*normal tablet styling*/
+@media(max-width:850px){
+    /*--- presentation - start ---*/
+    #presentation{
+        flex-direction: column;
+    }
+    #presentation img{
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+    /*--- presentation - end ---*/
+    
+    /*--- services - start ---*/
+    #services_holder{
+        display: grid;
+        grid-template-columns: repeat(2, 325px);
+        grid-gap: 30px;
+    }
+    .service{
+        width: 275px;
+    }
+    /*--- services - end ---*/
+    
+    /*--- flexing - start ---*/
+    #numbers, #brands{
+        grid-gap: 30px;
+    }
+    #numbers{
+        margin-bottom: 50px;
+    }
+    /*--- flexing - end ---*/
+    
+    /*--- comments - start ---*/
+    #comments{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+    .comment{
+        padding: 25px;
+    }
+    /*--- comments - end ---*/
+}
+
+/*small tablet styling*/
+@media(max-width:750px){
+    /*--- services - start ---*/
+    #services_holder{
+        grid-template-columns: repeat(1, 400px);
+        grid-gap: 30px;
+    }
+    .service{
+        background-size: 400px;
+        width: 350px;
+    }
+    /*--- services - end ---*/
+    
+    /*--- comments - start ---*/
+    #customer_comments h1{
+        text-align: center;
+    }
+    #comments{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+    }
+    .comment{
+        background-size: 90vw;
+    }
+    /*--- comments - end ---*/
+}
+
+/*phone styling*/
+@media(max-width:450px){
+    /*--- presentation - start ---*/
+    #presentation img{
+        width: 90vw;
+    }
+    #presentation_text h1{
+        text-align: center;
+    }
+    /*--- presentation - end ---*/
+    
+    /*--- services - start ---*/
+    #services_holder{
+        grid-template-columns: repeat(1, 90vw);
+        grid-gap: 30px;
+    }
+    .service{
+        background-size: 400px;
+        width: 75vw;
+        padding: 7.5vw;
+    }
+    /*--- services - end ---*/
+    
+    /*--- flexing - start ---*/
+    #numbers, #brands{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+    }
+
+    #brands img{
+        width: 100%;
+    }
+    /*--- flexing - end ---*/
+    
+    /*--- comments - start ---*/
+    .comment{
+        background-size: 500px;
+    }
+    /*--- comments - end ---*/
+    
+    /*--- contact - start ---*/
+    #contact h1{
+        text-align: center;
+    }
+    /*--- contact - end ---*/
+}

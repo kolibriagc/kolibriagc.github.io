@@ -1,0 +1,245 @@
+/*--- presentation - start ---*/
+#presentation{
+    display: flex;
+    align-items: center;
+}
+#presentation img{
+    width: 450px;
+    margin-right: 50px;
+}
+#presentation p{
+    text-align: justify;
+}
+/*--- presentation - end ---*/
+
+/*--- justification - start ---*/
+#justification h1{
+    text-align: center;
+}
+#justification_text{
+    text-align: justify;
+}
+/*--- justification - end ---*/
+
+/*--- strategy - start ---*/
+#strategy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#strategy h1{
+    text-align: center;
+}
+#strategy_points{
+    margin: 0 5vw;
+}
+.strategy_point{
+    display: flex;
+    align-items: center;
+}
+.st_number{
+    height: 100px;
+    width: 100px;
+    min-height: 100px;
+    background: linear-gradient(to right, #ae8625, #f7ef8a);
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.st_number span{
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.strategy_point p{
+    height: 100px;
+    padding: 25px;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+/*--- strategy - end ---*/
+
+/*--- portfolio - start ---*/
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#projects{
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-gap: 25px;
+}
+#projects a{
+    text-decoration: none;
+}
+.project{
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid white;
+    transition: 0.25s;
+}
+.project:hover{
+    border: 5px solid #f7ef8a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.project_bcg{
+    height: inherit;
+    width: inherit;
+}
+.project_text{
+    width: inherit;
+    height: inherit;
+    
+    margin-top: -350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.project_text img{
+    width: 75%;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+.project_text p{
+    width: 95%;
+    text-align: center;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+/*--- portfolio - end ---*/
+
+/*--- contact - start ---*/
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contact a{
+    color: white;
+    background-color: #ae8625;
+    font-size: 20px;
+    padding: 10px 25px;
+    text-decoration: none;
+    transition: 0.25s;
+}
+#contact a:hover{
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+/*--- contact - end ---*/
+
+/*tablet styling*/
+@media(max-width:1075px){
+    /*--- portfolio - start ---*/
+    #projects{
+        grid-template-columns: repeat(2, 410px);
+    }
+    .project{
+        width: 400px;
+        height: 400px;
+    }
+    /*--- portfolio - end ---*/
+}
+
+/*normal tablet styling*/
+@media(max-width:850px){
+    /*--- presentation - start ---*/
+    #presentation{
+        flex-direction: column;
+    }
+    #presentation img{
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+    #presentation h1{
+        text-align: center;
+    }
+    /*--- presentation - end ---*/
+
+    /*--- portfolio - start ---*/
+    #projects{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0;
+    }
+    .project{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+    .project_text{
+        aspect-ratio: inherit;
+        width: inherit;
+        position: relative;
+        margin-top: -100%;
+    }
+    /*--- portfolio - end ---*/
+}
+
+/*phone styling*/
+@media(max-width:450px){
+    /*--- presentation - start ---*/
+    #presentation{
+        flex-direction: column;
+    }
+    #presentation img{
+        width: 90vw;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+    #presentation h1{
+        text-align: center;
+    }
+    /*--- presentation - end ---*/
+
+    /*--- strategy - start ---*/
+    #strategy h1{
+        text-align: center;
+    }
+    #strategy_points{
+        margin: 0vw;
+    }
+    .strategy_point{
+        flex-direction: column;
+        width: 90vw;
+        margin-bottom: 50px;
+    }
+    .st_number{
+        height: auto;
+        width: 100%;
+        padding: 25px 0;
+    }
+    .strategy_point p{
+        height: auto;
+        margin: 0;
+    }
+    /*--- strategy - end ---*/
+
+    /*--- portfolio - start ---*/
+    #portfolio h1{
+        text-align: center;
+    }
+    #projects{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0;
+    }
+    /*--- portfolio - end ---*/
+    
+    /*--- contact - start ---*/
+    #contact h1{
+        text-align: center;
+    }
+    /*--- contact - end ---*/
+}

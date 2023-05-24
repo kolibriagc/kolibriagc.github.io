@@ -1,0 +1,49 @@
+.service{
+    display: flex;
+    align-items: center;
+}
+.service img{
+    width: 450px;
+    margin-right: 50px;
+}
+.service p{
+    text-align: justify;
+}
+.service a{
+    color: white;
+    background-color: #ae8625;
+    font-size: 25px;
+    padding: 5px 30px;
+    text-decoration: none;
+    transition: 0.25s;
+}
+.service a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/*normal tablet styling*/
+@media(max-width:850px){
+    .service{
+        flex-direction: column;
+    }
+    .service img{
+        width: 450px;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+    .service_text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*phone styling*/
+@media(max-width:450px){
+    .service img{
+        width: 90vw;
+    }
+}

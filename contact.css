@@ -1,0 +1,146 @@
+#contact{
+    display: flex;
+    align-items: center;
+    padding: 5vw;
+}
+#contact img{
+    width: 450px;
+    margin-right: 50px;
+}
+
+#contact_content{
+    display: flex;
+    align-items: center;
+}
+
+#contact form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contact form h1{
+    width: 100%;
+    margin-top: 0;
+}
+#contact form input, #contact form textarea{
+    width: 550px;
+    min-height: 20px;
+    padding: 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    background-color: rgb(225, 225, 225);
+}
+#contact form textarea{
+    height: 275px;
+}
+#contact form button{
+    border: 0;
+    background-color: #ae8625;
+    font-size: 20px;
+    padding: 5px 30px;
+    color: white;
+    transition: 0.25s;
+}
+#contact form button:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#contact hr{
+    height: 450px;
+    border: 0;
+    width: 5px;
+    margin: 0 20px;
+    background: linear-gradient(#ae8625, #f7ef8a);
+}
+#socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#socials a{
+    background: linear-gradient(to top right, #ae8625, #f7ef8a);
+    width: 60px;
+    height: 60px;
+    border-radius: 1000px;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.25s;
+}
+#socials a:hover{
+    transform: scale(110%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+#socials i{
+    font-size: 30px;
+    color: white;
+}
+
+/*tablet styling*/
+@media(max-width:1075px){
+    #contact{
+        flex-direction: column;
+        padding: 10vw 5vw;
+    }
+    #contact h1{
+        text-align: center;
+    }
+    #contact img{
+        width: 550px;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+    #contact_content{
+        flex-direction: column;
+    }
+
+    #contact hr{
+        height: 5px;
+        width: 550px;
+        margin: 20px 0px;
+    }
+    #socials{
+        flex-direction: row;
+    }
+    #socials a{
+        margin: 0px 10px;
+    }
+}
+
+/*normal tablet styling*/
+@media(max-width:850px){
+    #contact{
+        padding: 16vw 5vw 8vw;
+    }
+    #contact img{
+        width: 450px;
+    }
+    #contact form input, #contact form textarea{
+        width: 500px;
+    }
+    #contact hr{
+        width: 500px;
+    }
+}
+
+/*phone styling*/
+@media(max-width:450px){
+    #contact{
+        padding: 15vh 5vw 7.5vh;
+    }
+    #contact img{
+        width: 325px;
+    }
+    #contact form input, #contact form textarea{
+        width: 315px;
+    }
+    #contact hr{
+        width: 325px;
+    }
+}
