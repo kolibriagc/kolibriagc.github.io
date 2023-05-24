@@ -20,7 +20,6 @@ navButton.addEventListener("click", () =>{
         navMenu.style.pointerEvents = "none";
         navMenu.style.opacity = "0";
         navMenu.style.transform = "translateY(50px)";
-        navMenu.style.filter = "blur(1px)";
 
         if(window.scrollY > 50){
             navBar.classList.add("scrolled_nav");
@@ -32,7 +31,6 @@ navButton.addEventListener("click", () =>{
         navMenu.style.opacity = "1";
         navMenu.style.transform = "translateY(0px)";
         navBar.classList.remove("scrolled_nav");
-        navMenu.style.filter = "blur(0px)";
     }
 });
 /*--- nav code - end ---*/

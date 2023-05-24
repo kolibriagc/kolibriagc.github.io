@@ -197,7 +197,6 @@ footer{
         pointer-events: none;
         transform: translateY(50px);
         opacity: 0;
-        filter: blur(1px);
     }
     #nav_menu a{
         text-decoration: none;
