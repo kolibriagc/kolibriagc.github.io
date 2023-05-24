@@ -12,6 +12,27 @@
 }
 /*--- presentation - end ---*/
 
+/*--- logos - start ---*/
+#logos{
+    padding: 0 5vw 5vw;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 150px;
+    align-items: center;
+    justify-content: center;
+}
+#logos img{
+    width: 100%;
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition: 0.25s;
+}
+#logos img:hover{
+    opacity: 1;
+    filter: grayscale(0%);
+}
+/*--- logos - end ---*/
+
 /*--- justification - start ---*/
 #justification h1{
     text-align: center;
@@ -30,6 +51,9 @@
 }
 #strategy h1{
     text-align: center;
+}
+#strategy h4{
+    text-align: justify;
 }
 #strategy_points{
     margin: 0 5vw;
@@ -143,6 +167,12 @@
 
 /*tablet styling*/
 @media(max-width:1075px){
+    /*--- logos - start ---*/
+    #logos{
+        grid-gap: 100px;
+    }
+    /*--- logos - end ---*/
+
     /*--- portfolio - start ---*/
     #projects{
         grid-template-columns: repeat(2, 410px);
@@ -156,6 +186,13 @@
 
 /*normal tablet styling*/
 @media(max-width:850px){
+    /*--- logos - start ---*/
+    #logos{
+        grid-gap: 75px;
+        padding: 0 8vw 8vw;
+    }
+    /*--- logos - end ---*/
+
     /*--- presentation - start ---*/
     #presentation{
         flex-direction: column;
@@ -190,6 +227,13 @@
 
 /*phone styling*/
 @media(max-width:450px){
+    /*--- logos - start ---*/
+    #logos{
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+    }
+    /*--- logos - end ---*/
+
     /*--- presentation - start ---*/
     #presentation{
         flex-direction: column;

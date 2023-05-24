@@ -40,8 +40,17 @@
     text-align: justify;
     transition: 0.3s;
 }
-.service h3{
+.service_header{
+    display: flex;
+    align-items: center;
     margin-top: 75px;
+}
+.service img{
+    height: 75px;
+    margin-right: 25px;
+}
+.service h3{
+    margin-top: 15px;
 }
 .service:hover{
     transform: scale(102.5%);
@@ -86,6 +95,13 @@
 
 #brands img{
     width: 100%;
+    opacity: 0.5;
+    filter: grayscale(100%);
+    transition: 0.25s;
+}
+#brands img:hover{
+    opacity: 1;
+    filter: grayscale(0%);
 }
 /*--- flexing - end ---*/
 
@@ -202,6 +218,9 @@
     }
     .service{
         width: 275px;
+    }
+    .service_header{
+        margin-top: 25px;
     }
     /*--- services - end ---*/
     

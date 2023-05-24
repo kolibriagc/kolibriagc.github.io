@@ -29,6 +29,7 @@
     padding: 5px;
     font-size: 20px;
     margin-bottom: 10px;
+    border: 0;
     background-color: rgb(225, 225, 225);
 }
 #contact form textarea{

@@ -213,6 +213,7 @@ footer{
     footer{
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 30px;
+        padding: 8vw;
     }
     /*--- footer - end ---*/
 }
@@ -232,6 +233,9 @@ footer{
     main{
         min-height: 100vh;
     }
+    h1{
+        font-size: 35px;
+    }
     /*--- general - end ---*/
 
     /*--- nav - start ---*/
@@ -244,6 +248,7 @@ footer{
     footer{
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 50px;
+        padding: 7.5vw;
     }
     /*--- footer - end ---*/
 }
