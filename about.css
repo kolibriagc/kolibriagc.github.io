@@ -75,17 +75,8 @@
     /*--- staff - end ---*/
 }
 
-/*phone styling*/
-@media(max-width:450px){
-    /*--- presentation & mission - start ---*/
-    #presentation img, #mission img{
-        width: 90vw;
-    }
-    /*--- presentation & mission - end ---*/
-}
-
 /*small tablet styling*/
-@media(max-width:750px){
+@media(max-width:790px){
     /*--- staff - start ---*/
     #staff_members{
         grid-template-columns: repeat(1, 0.9fr);
@@ -97,4 +88,13 @@
     }
     /*--- staff - end ---*/
     
+}
+
+/*phone styling*/
+@media(max-width:450px){
+    /*--- presentation & mission - start ---*/
+    #presentation img, #mission img{
+        width: 90vw;
+    }
+    /*--- presentation & mission - end ---*/
 }

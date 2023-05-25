@@ -99,7 +99,7 @@
 }
 #projects{
     display: grid;
-    grid-template-columns: repeat(3, 360px);
+    grid-template-columns: repeat(3, 350px);
     grid-gap: 25px;
 }
 #projects a{
@@ -110,12 +110,6 @@
     height: 350px;
     display: flex;
     flex-direction: column;
-    border: 5px solid white;
-    transition: 0.25s;
-}
-.project:hover{
-    border: 5px solid #f7ef8a;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .project_bcg{
     height: inherit;
@@ -225,8 +219,8 @@
     /*--- portfolio - end ---*/
 }
 
-/*phone styling*/
-@media(max-width:450px){
+/*small tablet styling*/
+@media(max-width:790px){
     /*--- logos - start ---*/
     #logos{
         grid-template-columns: repeat(3, 1fr);
@@ -234,6 +228,24 @@
     }
     /*--- logos - end ---*/
 
+    /*--- strategy - start ---*/
+    #strategy_points{
+        margin: 0;
+        padding: 0;
+    }
+    .st_number{
+        aspect-ratio: 3/4;
+        height: 150px;
+        width: auto;
+    }
+    .strategy_point p{
+        height: 150px;
+    }
+    /*--- strategy - end ---*/
+}
+
+/*phone styling*/
+@media(max-width:450px){
     /*--- presentation - start ---*/
     #presentation{
         flex-direction: column;
@@ -251,9 +263,6 @@
     /*--- strategy - start ---*/
     #strategy h1{
         text-align: center;
-    }
-    #strategy_points{
-        margin: 0vw;
     }
     .strategy_point{
         flex-direction: column;

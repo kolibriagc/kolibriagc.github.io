@@ -245,7 +245,7 @@
 }
 
 /*small tablet styling*/
-@media(max-width:750px){
+@media(max-width:790px){
     /*--- services - start ---*/
     #services_holder{
         grid-template-columns: repeat(1, 400px);
@@ -256,6 +256,18 @@
         width: 350px;
     }
     /*--- services - end ---*/
+    
+    /*--- flexing - start ---*/
+    #numbers, #brands{
+        grid-gap: 25px;
+    }
+    .number{
+        aspect-ratio: 2/3;
+    }
+    .number p{
+        text-align: center;
+    }
+    /*--- flexing - end ---*/
     
     /*--- comments - start ---*/
     #customer_comments h1{
