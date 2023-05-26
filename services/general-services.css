@@ -55,6 +55,9 @@
 #strategy h4{
     text-align: justify;
 }
+#strategy_points{
+    padding: 0 5vw;
+}
 .strategy_point{
     display: flex;
     align-items: center;
@@ -104,28 +107,26 @@
 }
 #projects{
     display: grid;
-    grid-template-columns: repeat(3, 350px);
-    grid-gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
 }
 #projects a{
     text-decoration: none;
 }
 .project{
-    width: 350px;
-    height: 350px;
+    width: 100%;
+    aspect-ratio: 1/1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .project_bcg{
-    height: inherit;
-    width: inherit;
+    width: 100%;
 }
 .project_text{
-    width: inherit;
-    height: inherit;
-    margin-top: -350px;
+    width: 275px;
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,13 +134,14 @@
     color: white;
 }
 .project_text img{
-    width: 75%;
+    width: 100%;
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
 }
 .project_text p{
-    width: 95%;
+    width: 100%;
     text-align: center;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin: 0;
 }
 /*--- portfolio - end ---*/
 
@@ -151,17 +153,10 @@
     align-items: center;
 }
 #contact a{
-    color: white;
-    background-color: #ae8625;
     font-size: 20px;
     padding: 10px 25px;
     text-decoration: none;
     transition: 0.25s;
-}
-#contact a:hover{
-    color: black;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 /*--- contact - end ---*/
 
@@ -207,6 +202,12 @@
     /*--- presentation - end ---*/
     
     /*--- strategy - start ---*/
+    #strategy_points{
+        padding: 0;
+    }
+    .strategy_point{
+        margin: 0 0 50px;
+    }
     .st_number{
         aspect-ratio: 2/3;
         height: 150px;
@@ -228,10 +229,7 @@
         aspect-ratio: 1/1;
     }
     .project_text{
-        aspect-ratio: inherit;
-        width: inherit;
-        position: relative;
-        margin-top: -100%;
+        width: 180px;
     }
     /*--- portfolio - end ---*/
 }
@@ -240,7 +238,7 @@
 @media(max-width:790px){
     /*--- logos - start ---*/
     #logos{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-gap: 50px;
     }
     /*--- logos - end ---*/

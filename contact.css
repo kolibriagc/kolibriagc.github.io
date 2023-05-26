@@ -16,11 +16,8 @@
 #contact form{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 #contact form h1{
-    width: 100%;
     margin-top: 0;
 }
 #contact form input, #contact form textarea{
@@ -30,23 +27,16 @@
     font-size: 20px;
     margin-bottom: 10px;
     border: 0;
-    background-color: rgb(225, 225, 225);
+    background-color: rgb(240, 240, 240);
 }
 #contact form textarea{
     height: 275px;
 }
 #contact form button{
     border: 0;
-    background-color: #ae8625;
     font-size: 20px;
     padding: 5px 30px;
-    color: white;
     transition: 0.25s;
-}
-#contact form button:hover{
-    background-color: white;
-    color: black;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 #contact hr{
     height: 450px;
@@ -62,7 +52,6 @@
     align-items: center;
 }
 #socials a{
-    background: linear-gradient(to top right, #ae8625, #f7ef8a);
     width: 60px;
     height: 60px;
     border-radius: 1000px;
@@ -73,13 +62,8 @@
     text-decoration: none;
     transition: 0.25s;
 }
-#socials a:hover{
-    transform: scale(110%);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-}
 #socials i{
     font-size: 30px;
-    color: white;
 }
 
 /*tablet styling*/

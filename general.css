@@ -87,6 +87,24 @@ nav img{
 #nav_menu{
     display: none;
 }
+
+.gold_bar_coner{
+    background-image: url(pictures/random/1_bar_corner.webp);
+    background-size: 125px;
+    background-repeat: no-repeat;
+}
+.cta{
+    background-color: #ae8625;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    transition: 0.25s;
+}
+.cta:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 0px;
+}
 /*--- nav - end ---*/
 
 /*--- footer - start ---*/

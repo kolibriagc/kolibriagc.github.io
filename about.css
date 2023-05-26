@@ -22,8 +22,6 @@
     grid-gap: 50px;
 }
 .staff_member{
-    background: url(pictures/random/1_stripe_background.png);
-    background-size: 500px;
     background-color: rgb(32, 32, 32);
     padding: 50px;
     display: flex;

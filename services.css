@@ -10,17 +10,10 @@
     text-align: justify;
 }
 .service a{
-    color: white;
-    background-color: #ae8625;
     font-size: 25px;
     padding: 5px 30px;
     text-decoration: none;
     transition: 0.25s;
-}
-.service a:hover{
-    background-color: white;
-    color: black;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /*normal tablet styling*/

@@ -15,29 +15,27 @@
 /*--- presentation - end ---*/
 
 /*--- services - start ---*/
-#services{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 #services h1{
     text-align: center;
 }
 #services_holder{
     display: grid;
-    grid-template-columns: repeat(2, 400px);
+    grid-template-columns: repeat(2, 450px);
+    width: 100%;
+    justify-content: center;
     grid-gap: 50px;
 }
 .service{
     text-decoration: none;
-    background: url(pictures/random/1_stripe_background.png);
-    background-size: 500px;
     background-color: rgb(32, 32, 32);
     aspect-ratio: 1/1;
-    width: 350px;
+    width: 400px;
     padding: 25px;
     color: white;
     transition: 0.3s;
+}
+.service:hover{
+    transform: scale(102.5%);
 }
 .service_header{
     display: flex;
@@ -51,9 +49,6 @@
 .service h3{
     margin-top: 15px;
     text-align: left;
-}
-.service:hover{
-    transform: scale(102.5%);
 }
 .service hr{
     border: 0;
@@ -120,8 +115,6 @@
     grid-gap: 50px;
 }
 .comment{
-    background: url(pictures/random/1_stripe_background.png);
-    background-size: 500px;
     background-color: rgb(32, 32, 32);
     padding: 25px;
     color: white;
@@ -169,17 +162,10 @@
     align-items: center;
 }
 #contact a{
-    color: white;
-    background-color: #ae8625;
     font-size: 20px;
     padding: 10px 25px;
     text-decoration: none;
     transition: 0.25s;
-}
-#contact a:hover{
-    color: black;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 /*--- contact - end ---*/
 
@@ -213,20 +199,6 @@
     }
     /*--- presentation - end ---*/
     
-    /*--- services - start ---*/
-    #services_holder{
-        display: grid;
-        grid-template-columns: repeat(2, 325px);
-        grid-gap: 30px;
-    }
-    .service{
-        width: 275px;
-    }
-    .service_header{
-        margin-top: 25px;
-    }
-    /*--- services - end ---*/
-    
     /*--- flexing - start ---*/
     #numbers, #brands{
         grid-gap: 30px;
@@ -251,12 +223,15 @@
 @media(max-width:790px){
     /*--- services - start ---*/
     #services_holder{
-        grid-template-columns: repeat(1, 400px);
+        grid-template-columns: repeat(1, 0.7fr);
         grid-gap: 30px;
     }
     .service{
         background-size: 400px;
-        width: 350px;
+        width: 100%;
+    }
+    .service_header{
+        margin-top: 100px;
     }
     /*--- services - end ---*/
     
