@@ -259,6 +259,18 @@
         align-items: center;
     }
     /*--- presentation - end ---*/
+
+    /*--- services - start ---*/
+    #services_holder{
+        grid-template-columns: repeat(1, 500px);
+    }
+    .service{
+        width: 450px;
+    }
+    .service_header{
+        margin-top: 100px;
+    }
+    /*--- services - end ---*/
     
     /*--- challenges - start ---*/
     #challenges{
@@ -276,35 +288,26 @@
     /*--- flexing - end ---*/
     
     /*--- comments - start ---*/
+    #customer_comments h1{
+        text-align: center;
+    }
     #comments{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
     }
     .comment{
-        padding: 25px;
+        background-size: 90vw;
     }
     /*--- comments - end ---*/
 }
 
 /*small tablet styling*/
-@media(max-width:790px){
+@media(max-width:750px){
     /*--- presentation - start ---*/
     #presentation_links a{
         margin: 0 5px;
     }
     /*--- presentation - end ---*/
-
-    /*--- services - start ---*/
-    #services_holder{
-        grid-template-columns: repeat(1, 500px);
-    }
-    .service{
-        width: 450px;
-    }
-    .service_header{
-        margin-top: 100px;
-    }
-    /*--- services - end ---*/
     
     /*--- flexing - start ---*/
     #numbers, #brands{
@@ -317,19 +320,6 @@
         text-align: center;
     }
     /*--- flexing - end ---*/
-    
-    /*--- comments - start ---*/
-    #customer_comments h1{
-        text-align: center;
-    }
-    #comments{
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-    }
-    .comment{
-        background-size: 90vw;
-    }
-    /*--- comments - end ---*/
 }
 
 /*phone styling*/
