@@ -12,6 +12,72 @@
 }
 /*--- presentation & mission - end ---*/
 
+/*--- why choose us - start ---*/
+#why_choose_us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#why_choose_us h1{
+    margin-top: 0;
+}
+#wcu_content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 75px;
+    width: 100%;
+    margin-top: 25px;
+}
+.wcu_part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.wcu_part h2{
+    margin-top: 0;
+}
+
+.wcu_grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+    width: 100%;
+}
+.wcu_tile_holder{
+    padding: 5px;
+    border-radius: 15px;
+    background: linear-gradient(to right, #ae8625, #f7ef8a, #ae8625);
+}
+.wcu_tile{
+    aspect-ratio: 10/7;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.value img{
+    height: 80px;
+}
+.value h4{
+    margin: 10px 0 0;
+}
+
+.performance h4{
+    margin-top: 0;
+    text-align: center;
+}
+.performance p {
+    margin: 0;
+    text-align: center;
+}
+/*--- why choose us - end ---*/
+
 /*--- staff - start ---*/
 #staff h1{
     text-align: center;
@@ -49,6 +115,25 @@
     margin: 0;
 }
 /*--- staff - end ---*/
+
+/*tablet styling*/
+@media(max-width:1079px){
+    /*--- why choose us - start ---*/
+    #wcu_content{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+    }    
+    .wcu_grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 25px;
+        width: 100%;
+    }
+    .wcu_tile{
+        aspect-ratio: 2/1;
+    }
+    /*--- why choose us - end ---*/
+}
 
 /*normal tablet styling*/
 @media(max-width:850px){
@@ -96,4 +181,13 @@
         width: 90vw;
     }
     /*--- presentation & mission - end ---*/
+
+    /*--- why choose us - start ---*/
+    .wcu_tile{
+        aspect-ratio: 1/1;
+    } 
+    .wcu_tile img{
+        height: 60px;
+    }
+    /*--- why choose us - end ---*/
 }

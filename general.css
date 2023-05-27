@@ -141,7 +141,8 @@ nav img{
     justify-content: center;
     align-items: center;
     padding: 3px 0;
-    width: 32.5vh;
+    width: 20vh;
+    border: 0;
 }
 #scroll_up_btn i{
     margin-left: 10px;
@@ -220,7 +221,7 @@ footer{
     }
     #scroll_up_btn{
         padding: 2px 0;
-        width: 20vh;
+        width: 12vh;
     }
     /*--- scroll up - end ---*/
 }
@@ -319,12 +320,12 @@ footer{
     /*--- scroll up - start ---*/
     #scroll_up_btn_holder{
         left: 91%;
-        top: 85%;
+        top: 88%;
         transform: translate(-50%, -50%) rotate(-90deg);
     }
     #scroll_up_btn{
         padding: 3px 0;
-        width: 26vh;
+        width: 15vh;
     }
     /*--- scroll up - end ---*/
 
