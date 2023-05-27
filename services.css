@@ -1,3 +1,17 @@
+/*--- services header - start ---*/
+#services_header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#services_header h4{
+    margin: 0;
+    text-align: justify;
+    width: 60%;
+}
+/*--- services header - end ---*/
+
 .service{
     display: flex;
     align-items: center;
@@ -36,6 +50,12 @@
 
 /*phone styling*/
 @media(max-width:450px){
+    /*--- services header - start ---*/
+    #services_header h4{
+        width: 100%;
+    }
+    /*--- services header - end ---*/
+
     .service img{
         width: 90vw;
     }

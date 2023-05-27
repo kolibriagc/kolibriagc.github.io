@@ -97,6 +97,7 @@ nav img{
     background-color: #ae8625;
     color: white;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
     transition: 0.25s;
 }
 .cta:hover{
@@ -107,9 +108,49 @@ nav img{
 }
 /*--- nav - end ---*/
 
+/*--- scroll up - start ---*/
+#scroll_up_btn_holder{
+    background-image: linear-gradient(to right, #ae8625, #f7ef8a);
+    width: fit-content;
+    padding: 5px;
+    border-radius: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 97.5%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.25s;
+}
+#scroll_up_btn_holder.visible{
+    opacity: 0.25;
+    pointer-events: auto;
+}
+#scroll_up_btn_holder.visible:hover{
+    opacity: 1;
+    transform: translate(-50%, -75%) rotate(-90deg);
+}
+#scroll_up_btn{
+    margin: 0;
+    border-radius: 1000px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 0;
+    width: 32.5vh;
+}
+#scroll_up_btn i{
+    margin-left: 10px;
+}
+/*--- scroll up - end ---*/
+
 /*--- footer - start ---*/
 footer{
-    background: linear-gradient(to top right, rgb(250, 250, 250), rgb(215, 215, 215));
+    background: linear-gradient(to top right, rgb(250, 250, 250), rgb(215, 215, 215), rgb(225, 225, 225));
     padding: 5vw;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -172,6 +213,16 @@ footer{
         height: 50px;
     }
     /*--- nav - end ---*/
+    
+    /*--- scroll up - start ---*/
+    #scroll_up_btn_holder{
+        left: 96.5%;
+    }
+    #scroll_up_btn{
+        padding: 2px 0;
+        width: 20vh;
+    }
+    /*--- scroll up - end ---*/
 }
 
 /*normal tablet styling*/
@@ -254,6 +305,9 @@ footer{
     h1{
         font-size: 35px;
     }
+    h2{
+        font-size: 27px;
+    }
     /*--- general - end ---*/
 
     /*--- nav - start ---*/
@@ -261,6 +315,18 @@ footer{
         height: 40px;
     }
     /*--- nav - end ---*/
+    
+    /*--- scroll up - start ---*/
+    #scroll_up_btn_holder{
+        left: 91%;
+        top: 85%;
+        transform: translate(-50%, -50%) rotate(-90deg);
+    }
+    #scroll_up_btn{
+        padding: 3px 0;
+        width: 26vh;
+    }
+    /*--- scroll up - end ---*/
 
     /*--- footer - start ---*/
     footer{

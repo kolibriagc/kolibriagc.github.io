@@ -34,3 +34,23 @@ navButton.addEventListener("click", () =>{
     }
 });
 /*--- nav code - end ---*/
+
+/*--- scroll up code - start ---*/
+const scrollUpBtn = document.getElementById("scroll_up_btn_holder");
+
+window.addEventListener("scroll", () =>{
+    if(window.scrollY > 250 && document.body.clientHeight > 2000){
+        scrollUpBtn.classList.add("visible");
+    }
+    else{
+        scrollUpBtn.classList.remove("visible");
+    }
+});
+
+scrollUpBtn.addEventListener("click", () =>{
+    window.scrollTo({
+        top : 0,
+        behavior : "smooth"
+    });
+})
+/*--- scroll up code - end ---*/
