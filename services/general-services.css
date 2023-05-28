@@ -284,6 +284,12 @@
     }
     /*--- presentation - end ---*/
 
+    /*--- logos - start ---*/
+    #logos{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /*--- logos - end ---*/
+
     /*--- portfolio - start ---*/
     #portfolio h1{
         text-align: center;

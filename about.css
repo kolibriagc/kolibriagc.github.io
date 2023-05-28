@@ -21,6 +21,7 @@
 }
 #why_choose_us h1{
     margin-top: 0;
+    text-align: center;
 }
 #wcu_content{
     display: grid;
@@ -150,6 +151,12 @@
         text-align: center;
     }
     /*--- presentation & mission - end ---*/
+    
+    /*--- why choose us - start ---*/
+    .wcu_tile{
+        aspect-ratio: 5/4;
+    }
+    /*--- why choose us - end ---*/
     
     /*--- staff - start ---*/
     #staff_members{

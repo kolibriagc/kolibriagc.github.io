@@ -32,8 +32,17 @@
 
 /*normal tablet styling*/
 @media(max-width:850px){
+    /*--- services header - start ---*/
+    #services_header h4{
+        width: 80%;
+    }
+    /*--- services header - end ---*/
+
     .service{
         flex-direction: column;
+    }
+    .service h1{
+        text-align: center;
     }
     .service img{
         width: 450px;

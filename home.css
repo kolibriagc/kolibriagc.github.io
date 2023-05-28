@@ -23,6 +23,48 @@
 }
 /*--- presentation - end ---*/
 
+/*--- challenges - start ---*/
+#challenges h1{
+    text-align: center;
+}
+#challenges_holder{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+}
+.challenge_holder{
+    padding: 7.5px;
+    border-radius: 30px;
+    background-image: linear-gradient(to right, #ae8625, #f7ef8a, #ae8625);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.challenge{
+    background-color: white;
+    padding: 50px;
+    border-radius: 22.5px;
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.challenge h2{
+    margin-top: 0;
+    text-align: center;
+}
+.challenge p{
+    margin: 0 0 15px;
+    text-align: justify;
+}
+.challenge a{
+    padding: 5px 25px;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+/*--- challenges - end ---*/
+
 /*--- services - start ---*/
 #services{
     display: flex;
@@ -75,45 +117,6 @@
     text-align: justify;
 }
 /*--- services - end ---*/
-
-/*--- challenges - start ---*/
-#challenges{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
-}
-.challenge_holder{
-    padding: 10px;
-    border-radius: 30px;
-    background-image: linear-gradient(to right, #ae8625, #f7ef8a, #ae8625);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.challenge{
-    background-color: white;
-    padding: 50px;
-    border-radius: 20px;
-    min-height: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.challenge h2{
-    margin-top: 0;
-    text-align: center;
-}
-.challenge p{
-    margin: 0 0 15px;
-    text-align: justify;
-}
-.challenge a{
-    padding: 5px 25px;
-    font-size: 20px;
-    text-decoration: none;
-    text-align: center;
-}
-/*--- challenges - end ---*/
 
 /*--- flexing - start ---*/
 #flexing h2{
@@ -259,6 +262,12 @@
         align-items: center;
     }
     /*--- presentation - end ---*/
+    
+    /*--- challenges - start ---*/
+    #challenges_holder{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /*--- challenges - end ---*/
 
     /*--- services - start ---*/
     #services_holder{
@@ -271,12 +280,6 @@
         margin-top: 100px;
     }
     /*--- services - end ---*/
-    
-    /*--- challenges - start ---*/
-    #challenges{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    /*--- challenges - end ---*/
     
     /*--- flexing - start ---*/
     #numbers, #brands{
@@ -306,6 +309,9 @@
     /*--- presentation - start ---*/
     #presentation_links a{
         margin: 0 5px;
+    }
+    #presentation h1{
+        text-align: center;
     }
     /*--- presentation - end ---*/
     
@@ -341,6 +347,15 @@
     }
     /*--- presentation - end ---*/
     
+    /*--- challenges - start ---*/
+    .challenges_holder{
+        padding: 25px;
+    }
+    .challenge{
+        padding: 25px;
+    }
+    /*--- challenges - end ---*/
+    
     /*--- services - start ---*/
     #services_holder{
         grid-template-columns: repeat(1, 90vw);
@@ -355,12 +370,6 @@
         margin-top: 25px;
     }
     /*--- services - end ---*/
-    
-    /*--- challenges - start ---*/
-    .challenge{
-        padding: 25px;
-    }
-    /*--- challenges - end ---*/
     
     /*--- flexing - start ---*/
     #numbers, #brands{
@@ -378,7 +387,7 @@
     
     /*--- comments - start ---*/
     .comment{
-        background-size: 500px;
+        padding: 25px;
     }
     /*--- comments - end ---*/
     
