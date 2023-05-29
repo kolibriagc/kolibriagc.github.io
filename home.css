@@ -77,16 +77,15 @@
 }
 #services_holder{
     display: grid;
-    grid-template-columns: repeat(2, 450px);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
     justify-content: center;
 }
 .service{
     text-decoration: none;
     background-color: rgb(32, 32, 32);
-    aspect-ratio: 1/1;
-    width: 400px;
-    padding: 25px;
+    aspect-ratio: 3/2;
+    padding: 50px;
     color: white;
     border-radius: 15px;
     transition: 0.3s;
@@ -97,7 +96,7 @@
 .service_header{
     display: flex;
     align-items: center;
-    margin-top: 75px;
+    margin-top: 50px;
 }
 .service img{
     height: 75px;
@@ -125,7 +124,7 @@
 #numbers, #brands{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 100px;
+    grid-gap: 50px;
 }
 
 #numbers{
@@ -169,12 +168,12 @@
 }
 #comments{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
 }
 .comment{
     background-color: rgb(32, 32, 32);
-    padding: 25px;
+    padding: 50px;
     border-radius: 15px;
     color: white;
 }
@@ -230,20 +229,6 @@
 
 /*tablet styling*/
 @media(max-width:1075px){
-    /*--- flexing - start ---*/
-    #numbers, #brands{
-        grid-gap: 50px;
-    }
-    /*--- flexing - end ---*/
-
-    /*--- comments - start ---*/
-    #comments{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .comment{
-        padding: 50px;
-    }
-    /*--- comments - end ---*/
 }
 
 /*normal tablet styling*/
@@ -271,10 +256,10 @@
 
     /*--- services - start ---*/
     #services_holder{
-        grid-template-columns: repeat(1, 500px);
+        grid-template-columns: repeat(1, 1fr);
     }
     .service{
-        width: 450px;
+        width: auto;
     }
     .service_header{
         margin-top: 100px;
@@ -291,15 +276,8 @@
     /*--- flexing - end ---*/
     
     /*--- comments - start ---*/
-    #customer_comments h1{
-        text-align: center;
-    }
     #comments{
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-    }
-    .comment{
-        background-size: 90vw;
     }
     /*--- comments - end ---*/
 }
@@ -364,10 +342,12 @@
     .service{
         background-size: 400px;
         width: 75vw;
+        height: 75vw;
         padding: 7.5vw;
+        aspect-ratio: 1/1;
     }
     .service_header{
-        margin-top: 25px;
+        margin-top: 0px;
     }
     /*--- services - end ---*/
     

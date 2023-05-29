@@ -98,19 +98,21 @@
     color: white;
     text-decoration: none;
     border-radius: 15px;
+    aspect-ratio: 1/1;
     transition: 0.25s;
 }
 .staff_member:hover{
     transform: scale(102.5%);
 }
 .staff_member img{
-    width: 175px;
-    height: 175px;
+    width: 150px;
+    height: 150px;
     border-radius: 1000px;
 }
 .staff_member h3{
     text-align: center;
     color: #f7ef8a;
+    margin-top: 15px;
 }
 .staff_member p{
     margin: 0;
@@ -175,7 +177,7 @@
         justify-content: center;
     }
     .staff_member{
-        aspect-ratio: 1/1;
+        aspect-ratio: auto;
     }
     /*--- staff - end ---*/
     
